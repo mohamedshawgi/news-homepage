@@ -11,6 +11,7 @@ a {
 
 body {
   font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 body nav {
   max-width: 925px;
@@ -18,6 +19,7 @@ body nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 body nav img {
   width: 53px;
@@ -48,6 +50,7 @@ body .hero .intro .flex-container {
 body .hero .intro h1 {
   grid-column: 1/2;
   font-size: 48px;
+  font-weight: 800;
 }
 body .hero .intro img {
   width: 100%;
@@ -55,9 +58,15 @@ body .hero .intro img {
 body .hero .intro a {
   background-color: hsl(5deg, 85%, 63%);
   color: white;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
+  letter-spacing: 3px;
+  margin-top: 1rem;
+  display: inline-block;
 }
 body .hero aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-column: 3/4;
   grid-row: 1/3;
   background-color: hsl(240deg, 100%, 5%);
@@ -68,9 +77,11 @@ body .hero aside h2 {
 }
 body .hero aside h3 {
   color: hsl(36deg, 100%, 99%);
+  padding-top: 1rem;
 }
 body .hero aside p {
   color: hsl(233deg, 8%, 79%);
+  padding-bottom: 1rem;
 }
 body .hero article {
   display: flex;
@@ -78,4 +89,12 @@ body .hero article {
 body .hero article img {
   width: 82px;
   margin-right: 1rem;
+}
+body .hero article span {
+  font-size: x-large;
+  font-weight: 600;
+  color: hsl(233deg, 8%, 79%);
+}
+body .hero article h3 {
+  font-size: medium;
 }/*# sourceMappingURL=style.css.map */
