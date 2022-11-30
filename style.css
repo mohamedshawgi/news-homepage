@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+body nav {
+  max-width: 925px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav img {
+  width: 53px;
+}
+body nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+body nav li {
+  display: inline-block;
+}
+body .hero {
+  max-width: 925px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+body .hero .intro {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+body .hero .intro .flex-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body .hero .intro h1 {
+  grid-column: 1/2;
+  font-size: 48px;
+}
+body .hero .intro img {
+  width: 100%;
+}
+body .hero .intro a {
+  background-color: hsl(5deg, 85%, 63%);
+  color: white;
+  padding: 1rem 1.5rem;
+}
+body .hero aside {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  background-color: hsl(240deg, 100%, 5%);
+  padding: 1rem;
+}
+body .hero aside h2 {
+  color: hsl(35deg, 77%, 62%);
+}
+body .hero aside h3 {
+  color: hsl(36deg, 100%, 99%);
+}
+body .hero aside p {
+  color: hsl(233deg, 8%, 79%);
+}
+body .hero article {
+  display: flex;
+}
+body .hero article img {
+  width: 82px;
+  margin-right: 1rem;
+}/*# sourceMappingURL=style.css.map */

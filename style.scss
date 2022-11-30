@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+$Soft-orange: hsl(35, 77%, 62%);
+$Soft-red: hsl(5, 85%, 63%);
+// ### Neutral
+$Off-white: hsl(36, 100%, 99%);
+$Grayish-blue: hsl(233, 8%, 79%);
+$Dark-grayish-blue: hsl(236, 13%, 42%);
+$Very-dark-blue: hsl(240, 100%, 5%);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family:'Inter',sans-serif;
+    nav{
+        max-width: 925px;
+        margin:0 auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 53px;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width:40%;
+        }
+        li{
+            display:inline-block;
+        }
+    }
+    .hero{
+        max-width: 925px;
+        margin:0 auto;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+        .intro{
+            grid-column: 1/3;
+            grid-row: 1/3;
+            .flex-container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            h1{
+                grid-column: 1/2;
+                font-size: 48px;
+            }
+            img{
+                width: 100%;
+            }
+            a{
+                background-color: $Soft-red;
+                color:white;
+                padding: 1rem 1.5rem;
+            }
+        }
+        aside{
+            grid-column: 3/4;
+            grid-row: 1/3;
+            background-color: $Very-dark-blue;
+            padding: 1rem;
+            h2{
+                color:$Soft-orange;
+            }
+            h3{
+                color:$Off-white;
+            }
+            p{
+                color:$Grayish-blue;
+            }
+        }
+        article{
+            display:flex;
+            img{
+                width:82px;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
